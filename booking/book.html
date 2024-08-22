@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Reservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            padding: 0;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+        .reservation-container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-title {
+            margin-bottom: 20px;
+        }
+        .form-title h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .form-title hr {
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+        .input {
+            display: block;
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="reservation-container">
+        <form action="" class="form-section">
+            <div class="form-title">
+                <h2>Book Your Reservation</h2>
+                <hr>
+            </div>
+
+            <h3>Personal Information</h3>
+            <input type="text" name="fullName" placeholder="Full Name" class="input" required>
+            <input type="email" name="email" placeholder="Email Address" class="input" required>
+            <input type="tel" name="phone" placeholder="Phone Number" class="input" required>
+
+            <h3>Reservation Details</h3>
+            <select name="roomType" class="input" required>
+                <option value="">Select Room Type</option>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+            <label for="date">Check In Date<input type="date" name="checkInDate" class="input" required></label>
+            <label for="date">Check Out Date<input type="date" name="checkOutDate" class="input" required></label>
+            <input type="number" name="numberOfGuests" placeholder="Number of Guests" class="input" min="1" required>
+
+            <h3>Additional Requests</h3>
+            <textarea name="specialRequests" placeholder="Any special requests or requirements?" class="input"></textarea>
+
+            <h3>Payment Information</h3>
+            <input type="text" name="cardName" placeholder="Name on Card" class="input" required>
+            <input type="text" name="cardNumber" placeholder="Card Number" class="input" required>
+            <input type="text" name="cardExpiry" placeholder="Expiration Date (MM/YY)" class="input" required>
+            <input type="text" name="cardCVC" placeholder="CVC" class="input" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

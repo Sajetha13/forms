@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .up{
+            background-image: url(/form-2/i.jpeg);
+            margin: 40 auto;
+            width: 90%;
+            height: 60%;
+            height: 60vh;
+            color: #f7f3f9;
+            padding: 50px 40px;
+            background-size:cover;
+            background-position:center;
+        }
+        .up{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .t1{
+            font-weight: 900;
+            font-size: 40;
+        }
+        .t10{
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 30px;
+            color: rgb(165, 99, 227);
+        }
+        .log{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            background-color: rgb(165, 99, 227);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: rgb(216, 203, 227);
+            color: rgb(151, 63, 234);
+        }
+        .usr, .pas{
+            width: 400px;
+            height: 50px;
+            border: 0.1;
+            border-radius: 50px;
+            outline: 1px;
+            padding-left: 25px;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .usr:focus{
+            border: 2px solid #4f355f;
+        }
+        .pas:focus{
+            border: 2px solid #4f355f;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="up">
+        <div class="two">
+        <div class="t1">
+            Welcome to the website 
+        </div>
+        <div class="t10">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sequi excepturi alias, <br> facere ducimus deleniti facilis commodi ratione.
+        </div>
+    </div>
+         <div class="t2">
+            Create Account
+        </div>
+    </div>
+
+    <div class="down">
+        <form action="" class="log">
+            <h1>USER LOGIN</h1>
+            <input type="text" name="Username" placeholder="Username" class="usr" required> <br>
+            <input type="password" name="password" placeholder="Password" class="pas" required> <br>
+            <label for="remeber">
+            <div class="span">
+            <input type="checkbox" name="remeber me" placeholder="Remember me" class="rem">
+            Remember me </label>
+            <a href="http://">Forget Password ?</a>
+            </div>
+            <br>
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>

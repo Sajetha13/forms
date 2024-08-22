@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+        .event-registration {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left {
+            flex: 1;
+        }
+        .left-title {
+            margin-bottom: 20px;
+        }
+        .left-title h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .left-title hr {
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+        .input {
+            display: block;
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .right img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="event-registration">
+        <form action="" class="left">
+            <div class="left-title">
+                <h2>Register for the Event</h2>
+                <hr>
+            </div>
+
+            <!-- Personal Information -->
+            <h3>Personal Information</h3>
+            <input type="text" name="fullName" placeholder="Full Name" class="input" required>
+            <input type="email" name="email" placeholder="Email Address" class="input" required>
+            <input type="tel" name="phone" placeholder="Phone Number" class="input" required>
+
+            <!-- Event Details -->
+            <h3>Event Details</h3>
+            <select name="eventType" class="input" required>
+                <option value="">Select Event Type</option>
+                <option value="workshop">Workshop</option>
+                <option value="conference">Conference</option>
+                <option value="webinar">Webinar</option>
+            </select>
+            <input type="date" name="eventDate" class="input" required>
+            <input type="time" name="eventTime" class="input">
+
+            <!-- Additional Information -->
+            <h3>Additional Information</h3>
+            <textarea name="comments" placeholder="Any comments or special requests?" class="input"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+</body>
+</html>

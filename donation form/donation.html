@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+</head>
+<body>
+    
+    <div class="detailed-donation">
+        <form action="" class="left">
+            <div class="left-title">
+                <h2>Support Our Cause</h2>
+                <hr>
+            </div>
+    
+            <h3>Personal Information</h3>
+            <input type="text" name="firstName" placeholder="First Name" class="input" required>
+            <input type="text" name="lastName" placeholder="Last Name" class="input" required>
+            <input type="email" name="email" placeholder="Email" class="input" required>
+            <input type="tel" name="phone" placeholder="Phone Number" class="input" required>
+    
+            <h3>Billing Address</h3>
+            <input type="text" name="address" placeholder="Street Address" class="input" required>
+            <input type="text" name="city" placeholder="City" class="input" required>
+            <input type="text" name="state" placeholder="State/Province" class="input" required>
+            <input type="text" name="zip" placeholder="ZIP/Postal Code" class="input" required>
+            <select name="country" class="input" required>
+                <option value="">Select Country</option>
+                <option value="us">United States</option>
+                <option value="in">India</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+            </select>
+
+            <h3>Donation Amount</h3>
+            <input type="number" name="donationAmount" placeholder="Amount ($)" class="input" required>
+            <label class="checkbox-label">
+                <input type="checkbox" name="checkbox" value="yes"> Make this a monthly donation
+            </label>
+    
+            <h3>Payment Information</h3>
+            <select name="paymentMethod" class="input" required>
+                <option value="">Select Payment Method</option>
+                <option value="creditCard">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bankTransfer">Bank Transfer</option>
+            </select>
+    
+            <div class="credit-card-info">
+                <input type="text" name="cardName" placeholder="Name on Card" class="input" required>
+                <input type="text" name="cardNumber" placeholder="Card Number" class="input" required>
+                <input type="text" name="cardExpiry" placeholder="Expiration Date (MM/YY)" class="input" required>
+                <input type="text" name="cardCVC" placeholder="CVC" class="input" required>
+            </div>
+    
+            <h3>Additional Information</h3>
+            <textarea name="message" placeholder="Leave a message or special instructions" class="input"></textarea>
+    
+             <br><br>
+            <button type="submit">Donate Now</button>
+        </form>
+        <div class="right">
+            <img src="image/donation.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

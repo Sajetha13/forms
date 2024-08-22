@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Job Application Form</title>
+</head>
+<body>
+    <form action="" class="job-application">
+        <h2>Job Application</h2>
+
+        <h3>Personal Information</h3>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" name="fullname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea name="address" rows="3" required></textarea><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+        </select><br><br>
+
+        <h3>Education</h3>
+
+        <label for="highest-qualification">Highest Qualification:</label><br>
+        <input type="text" name="highest-qualification" placeholder="Your highest degree or certification" required><br><br>
+
+        <label for="institution">Institution:</label><br>
+        <input type="text" name="institution" placeholder="Name of your institution" required><br><br>
+
+        <label for="graduation-year">Year of Graduation:</label><br>
+        <input type="number" name="graduation-year" placeholder="Year of graduation" required><br><br>
+
+        <label for="gpa">GPA/Percentage:</label><br>
+        <input type="text" name="gpa" placeholder="Your GPA or percentage" required><br><br>
+
+        <h3>Work Experience</h3>
+
+        <label for="experience">Total Work Experience (in years):</label><br>
+        <input type="number" name="experience" min="0" placeholder="Total years of experience" required><br><br>
+
+        <label for="last-company">Last Company Worked At:</label><br>
+        <input type="text" name="last-company" placeholder="Name of your last company" required><br><br>
+
+        <label for="job-title">Job Title:</label><br>
+        <input type="text" name="job-title" placeholder="Your job title" required><br><br>
+
+        <label for="responsibilities">Key Responsibilities:</label><br>
+        <textarea name="responsibilities" placeholder="Describe your responsibilities" rows="5" required></textarea><br><br>
+
+        <label for="last-salary">Last Drawn Salary:</label><br>
+        <input type="text" name="last-salary" placeholder="Your last drawn salary" required><br><br>
+
+        <h3>Skills</h3>
+
+        <label for="skills">List Your Skills:</label><br>
+        <textarea name="skills" placeholder="List your key skills" rows="5" required></textarea><br><br>
+
+        <label for="proficiency">Proficiency in Key Skills:</label><br>
+        <input type="range" name="proficiency" min="1" max="10" step="1">
+        <span>1 (Beginner) - 10 (Expert)</span><br><br>
+
+        <label for="certifications">Relevant Certifications:</label><br>
+        <textarea name="certifications" placeholder="Any relevant certifications you hold" rows="3"></textarea><br><br>
+
+        <h3>Job Preferences</h3>
+
+        <label for="desired-position">Position Applied For:</label><br>
+        <input type="text" name="desired-position" placeholder="Position you are applying for" required><br><br>
+
+        <label for="location-preference">Preferred Job Location:</label><br>
+        <input type="text" name="location-preference" placeholder="Your preferred job location" required><br><br>
+
+        <label for="expected-salary">Expected Salary:</label><br>
+        <input type="text" name="expected-salary" placeholder="Your expected salary" required><br><br>
+
+        <label for="availability">Availability to Start:</label><br>
+        <input type="date" name="availability" required><br><br>
+
+        <h3>Additional Information</h3>
+
+        <label for="references">References (Name, Position, Contact Information):</label><br>
+        <textarea name="references" placeholder="Provide references" rows="3" required></textarea><br><br>
+
+        <label for="cover-letter">Cover Letter:</label><br>
+        <textarea name="cover-letter" placeholder="Why should we hire you?" rows="5" required></textarea><br><br>
+
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" name="resume" required><br><br>
+
+        <label for="portfolio">Portfolio/LinkedIn URL:</label><br>
+        <input type="url" name="portfolio" placeholder="Link to your portfolio or LinkedIn"><br><br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
