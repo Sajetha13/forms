@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contact{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: linear-gradient(#F3E9E8, #96B9D9);
+        }
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .left-title h2{
+            font-weight: 600;
+            color: #383e69d4;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .left-title hr{
+            border: none;
+            width: 220px;
+            height: 5px;;
+            background-color: #353a5fd6;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .input{
+            width: 400px;
+            height: 50px;
+            border: none;
+            border-radius: 50px;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .left textarea{
+            height: 140px !important;
+            padding-top: 15px;
+            border-radius: 25px;
+        }
+
+        .input:focus{
+            border: 2px solid #353A5F;
+        }
+
+        .input::placeholder{
+            color: gray;
+        }
+        .left button{
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: linear-gradient(270deg,#9EBAF3, #353A5F);
+        }
+
+        .right img{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <form action="" class="left">
+            <div class="left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="Name" class="input" required>
+            <input type="email" name="email" placeholder="Email" class="input" required>
+            <textarea name="message" placeholder="Message" class="input" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="right">
+            <img src="Large_White_and_Blue_Ceramic_Platter___Ceramic_Dinnerware_Set_Serving_Tray_Hand_Sculpted_Art_Modern_Tableware_Pottery-removebg-preview.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
